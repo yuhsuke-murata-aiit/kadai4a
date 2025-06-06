@@ -79,3 +79,6 @@ echo ""
 echo ""
 echo "#引数が3つのケース"
 resylt=$(bash ./gcd.sh "1" "2" "3")
+
+exit 0
+
