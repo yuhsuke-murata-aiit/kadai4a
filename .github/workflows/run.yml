@@ -1,7 +1,7 @@
 name: same_test
 on: [push]
 
-jobes:
+jobs:
   io_test:
     name: Use Linux commands
     runs-on: ubuntu-latest
@@ -10,5 +10,5 @@ jobes:
         uses: actions/checkout@v4
       - name: Permission Setting
         run: chmod +x gcd.sh test.sh
-      - neme: Test Run
+      - name: Test Run
         run: ./test.sh testdata.csv
